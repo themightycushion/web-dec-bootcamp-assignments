@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+* {
+    background-color: #C9EBF2;
+}
+
+table, th, td {
+    text-align: left;
+    border: 1px solid black;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+.personal-statement {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.links {
+    padding-bottom: 15px;
+}
+
+.education {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#profile-picture {
+    border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+
+#intro-languages {
+    font-family: 'Courier New', Courier, monospace;
+}
+
