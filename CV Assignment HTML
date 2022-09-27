@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <img id="profile-picture" src="img/profile.jpg" alt="Joseph Symes profile picture.">
+            <h1>Joseph Symes</h1>
+            <h3><em>Aspiring Web Developer</em></h3>
+            <h4 id="intro-languages">HTML, CSS, JS</h4>
+        </div>
+        <hr>
+        <div class="personal-statement">
+            <!-- <h2>Personal Statement</h2> -->
+            <!-- <p>I am a driven individual. When I have an idea I will change everything around me to align with how I can make that
+                idea a reality. That is why I have chosen to pursue web development. I have identified it as a key tool that will
+                enable me to live the life I dream of.</p> -->
+
+            <p>I was born in Carshalton, Surrey but never new the place. My family moved straight to North Devon where I was raised
+                and is the place I call home. I love the countryside which is why I was attracted to the opportunity to study for my
+                degree at Cornwall College in Newquay, in association with Plymouth University. Here I could live by the sea and
+                surf the waters to my hearts content.</p>
+
+            <p>After university I began a passion project, designing and printing t-shirts. This developed into a business idea
+                which led me to my first encounter with html and css while trying to develop my very own website. This is the experience
+                that first sparked my interest in web development.</p>
+
+            <!-- <p>My aspirations for a career had never been a priority until most recently in January 2021 when I began my training to become a
+                network engineer in the Brish Army. However, during the last week of the 1 year and 5 months training, I yielded to a
+                discharge due to a recurring leg injury. Personally, I see this is an opportunity to use what I learned in my
+                training to follow my interest in web development to an entirely new career.
+            </p> -->
+
+            <p>My relative experience includes self-learning via online resources such as w3schools and Sololearn. Previously, I was training to be a network
+                engineer in the British Army during which time I completed modules of study on IP addressing and API's. Also, I am currently
+                participating in a web development bootcamp with Bath Spa University which covers HTML, CSS, JS, and React.</p>
+        </div>
+
+        <div class="links">
+            <a href="https://www.instagram.com/jsphsyms/">Instagram</a>
+            <br>
+            <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+            <br>
+            <a href="https://github.com/themightycushion">Github</a>
+        </div>
+
+        <hr>
+
+        <div class="education">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th class="education-table-year">2016 - 2017</th>
+                    <th>BSc (Hons) Marine Sport Science</th>
+                    <th>Plymouth University</th>
+                </tr>
+                <tr>
+                    <td>Overview:</td>
+                    <td>The bringing together and honing of different skills to form a basis for entrepreneurship with the aim to bring
+                        about industry disruption.</td>
+                    <td>
+                        <ul>
+                            <li>Contemporary Issues in the Marine Environment</li>
+                            <li>Business, Enterprise, and Management</li>
+                            <li>Rudimentary Design (Computer Aided Design)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="education-table-year">2014 - 2016</th>
+                    <th>FdSc Surf Science & Technology</th>
+                    <th>Plymouth University</th>
+                </tr>
+                <tr>
+                    <td>Overview:</td>
+                    <td>With a focus on the scientific method and analytical skills development. The course was designed by a community of
+                        surfers for the purpose of education in crucial aspects of culture that the industry is founded upon. </td>
+                    <td>
+                        <ul>
+                            <li>Oceanography</li>
+                            <li>Psychological & Sociological Perspectives</li>
+                            <li>Events Management (English Surfing Nationals 2014)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
