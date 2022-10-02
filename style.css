@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/* background img properties */
+.main-container {
+    background-image: url(img/background.png);
+    opacity: 95%;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
+}
+/* contains nav bar position properties */
+.nav-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+/* using flex 1 property to ensure everyhting fits together neatly in the navbar */
+nav {
+    flex: 1;
+    padding: 60px;
+}
+/* logo is pushed right to the left with the flex start property and then inched rightward with the margin-left property */
+.logo {
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+/* I figured the best way to keep the actual navbar centered was to give it it's very own flexbox properties */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 40px;
+    color: white;
+    border-right: 1px solid white;
+}
+/* this is purely aesthetic. Cancels the last navbar > list items's border to give a clean finish to the dividers */
+nav ul li:last-child {
+    border-right: none;
+}
+/* gotta keep those links looking uniform with the rest of the page ;)... house style */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* my first proper go at making a button. It's pushed to the very right of the page with the and then inched left with the margin-right property */
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+/* main content container properties */
+.content-container {
+    height: 600px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+/* didn't realise this font had oligarchical/orwellian connotaions when I imported it... */
+.header {
+    font-family: 'Stalinist One', cursive;
+}
+
+.tagline {
+    display: flex;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.content-container hr {
+    height: 3px;
+    border: 1px solid white;
+    background-color: white;
+    margin-bottom: 3px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+/* These were more irritating to find than I had anticipated */
+.social-icons img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* overall i'm really pleased with how this web page turned out */
