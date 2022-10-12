@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCoder - Heaven for Programmers</title>
+    <!-- CSS Only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav style="background-color: rgb(73, 73, 73);" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a style="color: white;" class="navbar-brand" href="index.html">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: #adb5bd;" class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color: #adb5bd;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Topics</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Write for us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: #adb5bd;" class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <!-- Login Modal Button -->
+                <button style="margin-left: 6px;" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <!-- Login Modal -->
+                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login to iCoder</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                    <p style="font-size: 15px;" class="text-muted">We'll never share your email with anyone else.</p>
+                                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                    <input style="margin-bottom: 15px;" type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter your password here">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label style="padding-left: 5px;" class="form-check-label" for="flexCheckDefault">Check me out</label>
+                                    <br>
+                                    <button style="margin-top: 15px;" type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Signup Modal Button -->
+                <button style="margin-left: 6px;" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+                <!-- Signup Modal -->
+                <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Get an iCoder Account</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                    <p style="font-size: 15px;" class="text-muted">We'll never share your email with anyone else.</p>
+                                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                    <input style="margin-bottom: 15px;" type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter your password here">
+                                    <label for="exampleFormControlInput1" class="form-label">Confirm password</label>
+                                    <input style="margin-bottom: 10px;" type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter your password here">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Create Account</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button style="margin-bottom: 25px;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button style="margin-bottom: 25px;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button style="margin-bottom: 25px;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/1.jpg" class="d-block w-100" alt="carousel-image1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to iCoder</h2>
+                    <p>Technology News, Development and Trends</p>
+                    <button class="btn btn-danger" type="button">Technology</button>
+                    <button class="btn btn-primary" type="button">Web Development</button>
+                    <button class="btn btn-success" type="button">Tech Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/2.jpg" class="d-block w-100" alt="carousel-image2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>The Best Coding Blog</h2>
+                    <p>Technology News, Development and Trends</p>
+                    <button class="btn btn-danger" type="button">Technology</button>
+                    <button class="btn btn-primary" type="button">Web Development</button>
+                    <button class="btn btn-success" type="button">Tech Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/3.jpg" class="d-block w-100" alt="carousel-image3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Award Winning Blog</h2>
+                    <p>Technology News, Development and Trends</p>
+                    <button class="btn btn-danger" type="button">Technology</button>
+                    <button class="btn btn-primary" type="button">Web Development</button>
+                    <button class="btn btn-success" type="button">Tech Fun</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <span style="margin: 25px;"></span>
+    </div>
+    <!-- Grid Links -->
+    <div style="max-width: 900px;" class="container">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p style="font-weight: bold;" class="text-primary">World</p>
+                                <h4 class="card-title">Global Conferences</h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <a style="text-decoration: none;" href="#">Continue reading</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/images/thumb2.jpg" class="img-fluid rounded-end" alt="thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p style="font-weight: bold;" class="text-success">Design</p>
+                                <h4 class="card-title">Learn Designing</h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <a style="text-decoration: none;" href="#">Continue reading</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/images/thumb2.jpg" class="img-fluid rounded-end" alt="thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Third Card -->
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p style="font-weight: bold;" class="text-danger">FrontEnd</p>
+                                <h4 class="card-title">Bootstrap Templates</h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <a style="text-decoration: none;" href="#">Continue reading</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/images/thumb2.jpg" class="img-fluid rounded-end" alt="thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Card -->
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p style="font-weight: bold;" class="text-warning">Python</p>
+                                <h4 class="card-title">Learn Python</h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <a style="text-decoration: none;" href="#">Continue reading</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/images/thumb3.jpg" class="img-fluid rounded-end" alt="thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer style="margin-top: 25px;">
+            <div class="row">
+            <div class="col d-flex justify-content-start">
+                <p>&copy 2021-2022 iCoder, Inc. &middot <a style="text-decoration: none;" href="#">Privacy</a> &middot <a style="text-decoration: none;" href="">Terms</a></p>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a style="text-decoration: none;" href="#">Back to top</a>
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
